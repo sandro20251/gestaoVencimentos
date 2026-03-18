@@ -1,3 +1,74 @@
-h1 {
-    color: red;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e2ee9;
+    color: #fff;
+    height: 50px;
+}
+
+figcaption img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #2e2ee9;
+}
+
+nav a {
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+
+}
+
+nav a:hover {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+/* container princiapl do main (container) */
+.container {
+    min-height: 640px;
+}
+
+/* rodapé */
+
+footer {
+    background-color: #2e2ee9;
+    color: white;
+    padding: 10px;
+}
+
+.colunas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.coluna a{
+    text-decoration: none;
+    color:#fff;
+    
+}
+
+.coluna ul{
+    list-style: none;
+}
+
+.coluna a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+footer h2,
+footer h3{
+    text-align: center;
+    margin: 10px;
+    padding:5px;
 }
