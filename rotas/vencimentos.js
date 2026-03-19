@@ -19,7 +19,7 @@ router.post('/add/:id', async (req, res) => {
     const produto = req.body.produto;
     const fornecedor = req.body.fornecedor;
     const quantidade = req.body.quantidade;
-    const data = req.body.date;
+    const data = req.body.dataVencimento;
 
     await Vencimentos.create({
         ean: ean,
@@ -30,6 +30,18 @@ router.post('/add/:id', async (req, res) => {
         UsuarioId: id
     })
     res.redirect('/');
+})
+
+// Rota para vizualizar meus vencimentos
+
+router.get('/views/:id', async (req, res) => {
+    const id = req.params.id;
+    const vencimentos = await Vencimentos.findAll({
+        raw: true, where: {
+            UsuarioId: id
+        }
+    })
+    res.render('exibirVencimentos', { vencimentos });
 })
 
 module.exports = router;

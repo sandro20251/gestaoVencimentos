@@ -1,0 +1,44 @@
+<div class="container-logado">
+
+    <ul>
+        <li>
+            <form action="/vencimentos/views/{{vencimentos.id}}">
+                <input type="hidden" name="passarUsuario1" value="{{vencimentos.id}}">
+                <input type="submit" value="Meus vencimentos">
+            </form>
+        </li>
+        <li>
+            <form action="/vencimentos/cadastrar/{{vencimentos.id}}">
+                <input type="submit" value="Cadastrar Vencimento">
+            </form>
+        </li>
+
+
+
+    </ul>
+    <div class="container-exibirVencimentos">
+        <div class="meusVencimentos2">
+            <h2>Meus vencimentos:</h2>
+            <div class="vencimentos">
+                {{#each vencimentos}}
+                <div class="vencimentos2">
+                    <p>{{this.produto}} - {{this.fornecedor}} -
+                        <script>
+                            document.write(new Date("{{data}}").toLocaleDateString('pt-BR'))
+                        </script>
+                    </p>
+                    <form action="#">
+                        <input type="submit" value="Detalhes do vencimento">
+                    </form>
+                    <form action="#">
+                        <input type="submit" value="Excluir">
+                    </form>
+                   
+                </div>
+
+
+                {{/each}}
+            </div>
+        </div>
+
+    </div>

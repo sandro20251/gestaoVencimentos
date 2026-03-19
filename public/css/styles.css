@@ -333,6 +333,55 @@ footer h3 {
 }
 
 .container-logado ul li input:hover {
-    
+
     opacity: .9;
+}
+
+/* Páigna d eexibir vencimentos */
+
+.container-exibirVencimentos {
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.meusVencimentos2 {
+    width: 600px;
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.meusVencimentos2 h2 {
+    color: #2e2ee9;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+.vencimentos2 {
+    color: #2e2ee9;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vencimentos2 input {
+    background-color: #2e2ee9;
+    color: #fff;
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.vencimentos2 input:hover {
+    opacity: .9;
+}
+
+.vencimentos2 p {
+    line-height: 40px;
 }
