@@ -5,6 +5,9 @@ const exphbs = require('express-handlebars');
 // Módulo de desenvolvedor
 const chalk = require('chalk');
 
+// modulos internos
+const db = require('./db/conexao');
+
 // porta
 const porta = 3000;
 
@@ -31,6 +34,9 @@ app.get('/', (req, res) => {
     res.render('inicio');
 })
 
-app.listen(porta, () => {
-    console.log(`O express está escutando a porta ${porta}`);
-})
+db.sync()
+    .then(() => {
+        app.listen(porta, () => {
+            console.log(`O express está escutando a porta ${porta}`);
+        })
+    })
