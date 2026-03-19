@@ -162,3 +162,15 @@ footer h3 {
 .formUsuario .botoes input:hover{
     opacity: .9;
 }
+
+/* Página de erro */
+
+.container-erro{
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#2e2ee9;
+    font-weight: bold;
+    font-size: 24px;
+}
