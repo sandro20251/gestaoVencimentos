@@ -22,6 +22,9 @@ app.set('view engine', 'handlebars');
 // pastas estaticas
 app.use(express.static('public'))
 
+// rotas
+app.use('/user', require('./rotas/usuarios'));
+
 // rota inicial
 
 app.get('/', (req, res) => {
