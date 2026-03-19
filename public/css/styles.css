@@ -193,58 +193,146 @@ footer h3 {
 
 }
 
-.login2 h2{
+.login2 h2 {
     text-align: center;
-    color:#2e2ee9;
+    color: #2e2ee9;
     font-weight: bold;
     margin: 10px;
 }
 
-.login2 form .campos{
+.login2 form .campos {
     display: flex;
     flex-direction: column;
 }
 
-.login2 form label{
-    color:#2e2ee9;
+.login2 form label {
+    color: #2e2ee9;
     font-weight: bold;
     text-align: center;
-    margin:5px;
+    margin: 5px;
 }
 
-.login2 form .dados input{
+.login2 form .dados input {
     border: 1px solid #2e2ee9;
     border-radius: 10px;
     padding: 10px;
 }
-.login2 form .botoes{
+
+.login2 form .botoes {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin: 20px;
 }
 
-.login2 form .botoes input{
+.login2 form .botoes input {
     background-color: #2e2ee9;
     border: 1px solid #2e2ee9;
     border-radius: 10px;
     color: #fff;
     font-weight: bold;
-    padding:10px;
-    
+    padding: 10px;
+
 }
 
 
-.login2 form .botoes input:hover{
+.login2 form .botoes input:hover {
     opacity: .9;
 }
 
 /* tela inicial logada */
-.container-logado nav{
+.container-logado nav {
     background-color: #990000;
-   
-    
+
+
 }
-.container-logado a{
-    color:#fff;
+
+.container-logado a {
+    color: #fff;
+}
+
+/* Pagina de cadastro de vencimentos */
+
+.container-cadastrarVencimentos {
+    display: flex;
+    justify-content: center;
+    height: 640px;
+    align-items: center;
+}
+
+.cadastrarVencimento2 {
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    width: 300px;
+    height: 600px;
+    padding: 10px;
+}
+
+.cadastrarVencimento2 .campos {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastrarVencimento2 h2 {
+    color: #2e2ee9;
+    margin: 10px;
+    text-align: center;
+}
+
+.cadastrarVencimento2 label {
+    color: #2e2ee9;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+.cadastrarVencimento2 input {
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cadastrarVencimento2 .botoes {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.cadastrarVencimento2 .botoes input {
+    background-color: #2e2ee9;
+    color: #fff;
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+
+}
+
+/* Navegação detela incial de logado */
+
+.container-logado ul {
+    display: flex;
+    height: 40px;
+    background-color: #990000;
+    justify-content: right;
+    gap: 10px;
+
+}
+
+.container-logado ul li {
+    list-style: none;
+}
+
+
+.container-logado ul li input {
+    background-color: #990000;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #990000;
+    line-height: 35px;
+}
+
+.container-logado ul li input:hover {
+    
+    opacity: .9;
 }

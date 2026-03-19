@@ -47,7 +47,7 @@ router.post('/entrar', async (req, res) => {
         console.log(index.login)
         index.pessoa = `${usuarioProcurado.user}`;
         const pessoa2 = usuarioProcurado;
-        console.log(usuarioProcurado.user);
+        
         res.render('inicioLogado', { pessoa2 })
     } else {
         mensagem = "Usuário e senha não conferem ";

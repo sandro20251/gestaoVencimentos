@@ -32,6 +32,7 @@ app.use(express.static('public'))
 
 // rotas
 app.use('/user', require('./rotas/usuarios'));
+app.use('/vencimentos', require('./rotas/vencimentos'));
 
 // rota inicial
 
