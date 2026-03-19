@@ -15,6 +15,11 @@ const porta = 3000;
 
 const app = express();
 
+// constantes de seção
+
+const pessoa = null;
+const logado = false;
+
 // middlewares
 // req.body
 app.use(express.urlencoded({ extended: true }));

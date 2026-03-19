@@ -108,7 +108,7 @@ footer h3 {
     border: 1px solid black;
 }
 
-.formUsuario2{
+.formUsuario2 {
     width: 300px;
     height: 400px;
     border: 1px solid #2e2ee9;
@@ -116,25 +116,25 @@ footer h3 {
     padding: 10px;
 }
 
-.formUsuario2 h2{
+.formUsuario2 h2 {
     text-align: center;
     margin: 10px;
-    color:#2e2ee9;
+    color: #2e2ee9;
 }
 
-.formUsuario .campos{
+.formUsuario .campos {
     display: flex;
     flex-direction: column;
 }
 
-.formUsuario .campos label{
-    color:#2e2ee9;
+.formUsuario .campos label {
+    color: #2e2ee9;
     text-align: center;
     font-weight: bold;
     margin: 5px;
 }
 
-.formUsuario .campos input{
+.formUsuario .campos input {
     border: 1px solid #2e2ee9;
     border-radius: 10px;
     padding: 10px;
@@ -149,28 +149,102 @@ footer h3 {
 }
 
 
-.formUsuario .botoes input{
+.formUsuario .botoes input {
     background-color: #2e2ee9;
-    color:#fff;
+    color: #fff;
     font-weight: bold;
     padding: 10px;
     border: 1px solid #2e2ee9;
     border-radius: 10px;
     flex: 1;
-}  
+}
 
-.formUsuario .botoes input:hover{
+.formUsuario .botoes input:hover {
     opacity: .9;
 }
 
 /* Página de erro */
 
-.container-erro{
+.container-erro {
     height: 640px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#2e2ee9;
+    color: #2e2ee9;
     font-weight: bold;
     font-size: 24px;
+}
+
+/* Página de login */
+
+.container-login {
+    display: flex;
+    height: 640px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.login2 h2{
+    text-align: center;
+    color:#2e2ee9;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.login2 form .campos{
+    display: flex;
+    flex-direction: column;
+}
+
+.login2 form label{
+    color:#2e2ee9;
+    font-weight: bold;
+    text-align: center;
+    margin:5px;
+}
+
+.login2 form .dados input{
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    padding: 10px;
+}
+.login2 form .botoes{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.login2 form .botoes input{
+    background-color: #2e2ee9;
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    padding:10px;
+    
+}
+
+
+.login2 form .botoes input:hover{
+    opacity: .9;
+}
+
+/* tela inicial logada */
+.container-logado nav{
+    background-color: #990000;
+   
+    
+}
+.container-logado a{
+    color:#fff;
 }
