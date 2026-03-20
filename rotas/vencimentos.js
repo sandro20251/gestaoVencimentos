@@ -44,4 +44,12 @@ router.get('/views/:id', async (req, res) => {
     res.render('exibirVencimentos', { vencimentos });
 })
 
+// Rota para vizualizar um vencimento específico
+router.get('/venc/:id', async (req, res)=>{
+    const id = req.params.id;
+    const vencimento = await Vencimentos.findOne({raw:true, where:{id:id}});
+   
+    res.render('detalhesVencimento', {vencimento});
+})
+
 module.exports = router;

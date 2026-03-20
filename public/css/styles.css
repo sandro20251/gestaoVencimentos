@@ -385,3 +385,49 @@ footer h3 {
 .vencimentos2 p {
     line-height: 40px;
 }
+
+/* Detalhes do vencimento */
+
+.container-detalhesVencimento {
+    display: flex;
+    justify-content: center;
+    min-height: 640px;
+    align-items: center;
+}
+
+.detalhes2 {
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.detalhes2 h2 {
+    color: #2e2ee9;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+}
+
+.detalhes2 span {
+    color: #2e2ee9;
+}
+
+.acoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.acoes input {
+    background-color: #2e2ee9;
+    color: #fff;
+    border: 1px solid #2e2ee9;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.acoes input:hover {
+    opacity: .9;
+}

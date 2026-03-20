@@ -1,0 +1,28 @@
+<div class="container-detalhesVencimento">
+    <div class="detalhes2">
+
+        <h2>{{vencimento.produto}}</h2>
+        <p><span>Código do produto:</span>{{vencimento.ean}}</p>
+        <p> <span>Fornecedor:</span> {{vencimento.fornecedor}}</p>
+        <p><span>Quantidade:</span>{{vencimento.quantidade}}</p>
+        <p><span>Data de vencimento:</span>
+            <script>
+                const data = "{{vencimento.data}}";
+                if (data && data !== "null") {
+                    document.write(new Date(data).toLocaleDateString('pt-BR'));
+                } else {
+                    document.write("Sem data");
+                }
+            </script>
+        </p>
+        <div class="acoes">
+            <form action="#">
+                <input type="submit" value="Atualizar">
+            </form>
+            <form action="#">
+                <input type="submit" value="Excluir">
+            </form>
+        </div>
+
+    </div>
+</div>

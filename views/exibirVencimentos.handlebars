@@ -1,18 +1,20 @@
 <div class="container-logado">
 
     <ul>
+       
         <li>
-            <form action="/vencimentos/views/{{vencimentos.id}}">
+
+            <form action="/vencimentos/views/{{vencimentos.UsuarioId}}">
                 <input type="hidden" name="passarUsuario1" value="{{vencimentos.id}}">
                 <input type="submit" value="Meus vencimentos">
             </form>
         </li>
         <li>
-            <form action="/vencimentos/cadastrar/{{vencimentos.id}}">
+            <form action="/vencimentos/cadastrar/{{vencimentos.UsuarioId}}">
                 <input type="submit" value="Cadastrar Vencimento">
             </form>
         </li>
-
+       
 
 
     </ul>
@@ -27,13 +29,13 @@
                             document.write(new Date("{{data}}").toLocaleDateString('pt-BR'))
                         </script>
                     </p>
-                    <form action="#">
+                    <form action="/vencimentos/venc/{{this.id}}">
                         <input type="submit" value="Detalhes do vencimento">
                     </form>
                     <form action="#">
                         <input type="submit" value="Excluir">
                     </form>
-                   
+
                 </div>
 
 
