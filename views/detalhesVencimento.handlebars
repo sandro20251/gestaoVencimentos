@@ -1,3 +1,22 @@
+<div class="container-logado">
+
+    <ul>
+        <li>
+            <form action="/vencimentos/views/{{vencimento.id}}">
+                <input type="hidden" name="passarUsuario1" value="{{pessoa2.id}}">
+                <input type="submit" value="Meus vencimentos">
+            </form>
+        </li>
+        <li>
+            <form action="/vencimentos/cadastrar/{{vencimento.id}}">
+                <input type="submit" value="Cadastrar Vencimento">
+            </form>
+        </li>
+
+
+
+    </ul>
+</div>
 <div class="container-detalhesVencimento">
     <div class="detalhes2">
 
@@ -19,7 +38,7 @@
             <form action="#">
                 <input type="submit" value="Atualizar">
             </form>
-            <form action="#">
+            <form action="/vencimentos/excluir/{{vencimento.id}}" method="post">
                 <input type="submit" value="Excluir">
             </form>
         </div>

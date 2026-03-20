@@ -29,7 +29,7 @@ router.post('/add/:id', async (req, res) => {
         data: data,
         UsuarioId: id
     })
-    res.redirect('/');
+    res.redirect(`/vencimentos/views/${id}`);
 })
 
 // Rota para vizualizar meus vencimentos
@@ -41,15 +41,24 @@ router.get('/views/:id', async (req, res) => {
             UsuarioId: id
         }
     })
-    res.render('exibirVencimentos', { vencimentos });
+    res.render('exibirVencimentos', { vencimentos, id });
 })
 
 // Rota para vizualizar um vencimento específico
-router.get('/venc/:id', async (req, res)=>{
+router.get('/venc/:id', async (req, res) => {
     const id = req.params.id;
-    const vencimento = await Vencimentos.findOne({raw:true, where:{id:id}});
-   
-    res.render('detalhesVencimento', {vencimento});
+    const vencimento = await Vencimentos.findOne({ raw: true, where: { id: id } });
+
+    res.render('detalhesVencimento', { vencimento });
 })
 
+
+// Rota para excluir vencimento
+router.post('/excluir/:id', async (req, res) => {
+    const id = req.params.id;
+    const vencimento = Vencimentos.findOne({ raw: true, where: { id: id } })
+    console.log(vencimento.UsuarioId);
+    Vencimentos.destroy({ where: { id: id } });
+    res.redirect(`/vencimentos/views/${vencimento.UsuarioId}`);
+})
 module.exports = router;

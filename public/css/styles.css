@@ -405,7 +405,7 @@ footer h3 {
     color: #2e2ee9;
     font-weight: bold;
     text-align: center;
-    margin: 30px;
+    margin-bottom: 30px;
 }
 
 .detalhes2 span {
@@ -416,7 +416,7 @@ footer h3 {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 20px;
+    margin-top: 30px;
 }
 
 .acoes input {

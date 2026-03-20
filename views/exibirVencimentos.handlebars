@@ -1,20 +1,20 @@
 <div class="container-logado">
 
     <ul>
-       
+
         <li>
 
-            <form action="/vencimentos/views/{{vencimentos.UsuarioId}}">
+            <form action="/vencimentos/views/{{id}}">
                 <input type="hidden" name="passarUsuario1" value="{{vencimentos.id}}">
                 <input type="submit" value="Meus vencimentos">
             </form>
         </li>
         <li>
-            <form action="/vencimentos/cadastrar/{{vencimentos.UsuarioId}}">
+            <form action="/vencimentos/cadastrar/{{id}}">
                 <input type="submit" value="Cadastrar Vencimento">
             </form>
         </li>
-       
+
 
 
     </ul>
@@ -32,7 +32,7 @@
                     <form action="/vencimentos/venc/{{this.id}}">
                         <input type="submit" value="Detalhes do vencimento">
                     </form>
-                    <form action="#">
+                    <form action="/vencimentos/excluir/{{this.id}}" method="post">
                         <input type="submit" value="Excluir">
                     </form>
 
